@@ -171,7 +171,6 @@ namespace utlFTP
 								http += urlencode(filename);
 
 								wtwMessageDef msg;
-								initStruct(msg);
 								msg.contactData = info->contact;
 								msg.msgMessage = http.c_str();
 								msg.msgFlags = WTW_MESSAGE_FLAG_OUTGOING | WTW_MESSAGE_FLAG_CHAT_MSG;
